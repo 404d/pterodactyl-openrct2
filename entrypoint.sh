@@ -7,4 +7,4 @@ echo ":/home/container$ ${MODIFIED_STARTUP}"
 
 # Run the Server
 export PTY_STARTUP=${MODIFIED_STARTUP}
-python -c 'import pty; import os; pty.spawn(os.environ["PTY_STARTUP"])'
+python -c 'import pty; import os; pty.spawn(os.environ["PTY_STARTUP"].split(" "))'
