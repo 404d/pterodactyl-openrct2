@@ -11,4 +11,4 @@ WORKDIR /home/container
 
 COPY ./entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT /bin/bash /entrypoint.sh
+ENTRYPOINT /bin/bash -li /entrypoint.sh
